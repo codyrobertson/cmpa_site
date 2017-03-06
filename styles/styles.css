@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 section,
 footer {
   padding: 96px 0;
@@ -813,3 +814,12 @@ color: black; }
       padding-bottom: 240px !important;
     }
   }
+=======
+/* NOTE:  This Handles Combining the CSS Files */
+@import 'styles/variables.css';
+/* NOTE: The Modules Folder Handles the Segmented Modular CSS Files */
+@import 'styles/modules/layout.css';
+@import 'styles/modules/type.css';
+@import 'styles/modules/buttons.css';
+@import 'styles/modules/helpers.css';
+>>>>>>> origin/master
