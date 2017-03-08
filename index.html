@@ -18,55 +18,83 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src=".../js/main.js"></script>
+<script src="/js/main.js"></script>
 
 </script>
   </head>
   <body>
     <header>
-    <nav class="navbar-default container u-max-full-width">
+    <nav class="navbar-default container u-max-full-width" id="navbar">
       <div class="row">
-        <div class="five columns container">
-          <a class="logo navbar-brand" href="index.html" id="home"> Gerund Magazine</a>
-          <a class="logo--mobile one columns"> GM </a>
+        <div class="five columns">
+          <a class="logo navbar-brand flex-item" href="index.html" id="home"> Gerund Magazine</a>
+          <a class="logo--mobile one columns flex-item"> GM </a>
         </div>
 
         <div class="columns two container">
-          <span class="navbar-link-heading"> Article One </span><br>
-          <a class="navbar-link" href=#"articleone"> Finding The <br> Beauty In Design </a>
+          <span class="navbar-link-heading flex-item"> Article One </span><br>
+          <a class="navbar-link flex-item" href=#"articleone"> Finding The <br> Beauty In Design </a>
         </div>
 
         <div class="columns two container">
           <span class="navbar-link-heading"> Article Two </span><br>
-          <a class="navbar-link" href=#"articleone"> The Looks you are given / born with </a>
+          <a class="navbar-link flex-item" href=#"articleone"> The Looks you are given / born with </a>
+        </div>
+
+        <div class="columns two container">
+          <span class="navbar-link-heading  flex-item"> Article Three </span><br>
+          <a class="navbar-link  flex-item" href=#"articleone"> Raging Against Design </a>
         </div>
 
         <div class="column one container">
-          <a class="navbar-link text" href=#"contactus"> Contact</a>
-        </div>
-
-        <div class="column one container">
-          <a class="navbar-link text" href=#"contactus"> About</a>
+          <a class="navbar-link text flex-item" href=#"contactus"> About</a>
         </div>
       </div>
     </nav>
   </header>
-  <div class="container">
-    <div class="row">
-    <div class="twelve columns text-center" id="articles">
+
+
+    <div class="row text-center">
+    <div class="flex-item" id="articles">
       <h1 class="heading-large"> Featured Articles </h1>
+      <p class="subtitle"> Our Featured Articles This Month </p>
     </div>
     </div>
-  </div>
-  <section class="articles-wrapper u-full-width">
+
+  <div class="articles-wrapper">
 <div class="container">
-  <div class="row">
-    <article class="six columns article featured">
-      <img src="img/zora-45.jpg" class="article-img contained">
-      <h2 class="article-heading"> Finding Beauty In Design </h2>
+
+    <article class="flex-item article featured">
+      <img src="img/zora-45.jpg" class="flex-item article-img contained">
+      <br>
+      <p class="flex-item article-heading--byline featured"> Jon Goldberg // 8-9-16 </p>
+      <h2 class="flex-item article-heading"> Finding Beauty In Design </h2>
+      <p class="flex-item article-heading--desc featured truncate mask"> Where, in the month of February, can a New Yorker turn in search of beauty? To the window, maybe, but at her own peril; what the skies giveth, in the form of a delicate Monday-afternoon coating of snow on sidewalks and branches, they taketh away by apoplectic, skyscraper-shaking rainstorm on Tuesday morning. Safer to bet instead on synthetic splendors, like the ones parading down Fashion Week runways and onto our screens, or on display in the city’s museums, which in the late winter serve a parallel purpose to the one Central Park does in more optimistic weather, doubling as collective urban living rooms when it’s too dismal to contemplate a trip outside..</p>
+      <a class="flex item article-link" href="finding_beauty_in_design.html"></a>
     </article>
 
+    <article class="flex-item article">
+      <p class="flex-item article-heading--byline text-center">SPONSERED ARTICLE </p>
+      <img src="img/zora-45.jpg" class= " flex-item article-img contained">
+      <p class="flex-item article-heading--byline"> Rob Walker // 8-9-16 </p>
+      <h2 class="flex-item article-heading">The Looks you are given and the looks you are born with </h2>
+      <a class="article-link" href="finding_beauty_in_design.html"></a>
+    </article>
+    <article class=" flex-item article article-text-only">
+      <p class="flex-item article-heading--byline"> Rob Walker // 8-9-16 </p>
+      <h2 class="flex-item article-heading"> Celebrating Design Without Contending It</h2>
+      <p class="flex-item article-heading--desc truncate">
+The cover of the 1976 self-titled début album by the band Boston depicted several guitar-shaped spaceships, evidently <br> escaping an exploding Earth. The album was a smash, and the visual is now iconic... </p>
+<a class="article-link" href="finding_beauty_in_design.html"></a>
 
+    </article>
+  </div>
 </div>
-</div>
-</div>
+<footer>
+<div class="container text-center">
+  <div class="row">
+   <h1>  Copyright (c) 2016 Gerund Media Holdings LLC, All Rights Reserved. </h1>
+ </div>
+</div> </footer>
+</body>
+</html>
