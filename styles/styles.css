@@ -219,10 +219,14 @@ a.logo--mobile{
     line-height: 1.5 !important;
     margin: .9rem 0 0 0 !important;
     word-break: keep-all !important;
-    word-wrap: break-word;
+    word-wrap: break-word;}
 
-  }
 
+.article{
+
+flex-grow: 10;
+flex-basis: 100%;
+}
   a.logo::after{
     display: none;
   }
