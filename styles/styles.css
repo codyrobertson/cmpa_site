@@ -222,12 +222,6 @@ a.logo--mobile{
     word-wrap: break-word;}
 
 
-.article{
-width: 100% !important;
-flex-grow: 10 !important;
-flex-basis: 100% !important;
-}
-
 .flex-item:nth-child(2) {
     -webkit-order: 2;
     -ms-flex-order: 2;
