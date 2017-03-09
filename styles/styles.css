@@ -249,7 +249,6 @@ a.logo--mobile{
   a.navbar-link{
     float: left !important;
     position: absolute;
-    left: -5%;
     flex-grow: 6 !important;
     order: 1 2 3;
     height: 100%;
