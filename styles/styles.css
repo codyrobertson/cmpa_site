@@ -223,9 +223,9 @@ a.logo--mobile{
 
 
 .article{
-
-flex-grow: 10;
-flex-basis: 100%;
+width: 100% !important;
+flex-grow: 10 !important;
+flex-basis: 100% !important;
 }
   a.logo::after{
     display: none;
