@@ -207,7 +207,7 @@ a.logo--mobile{
     font-size: 2rem !important;
   }
 
-  nav:after{display: flex !important; margin-top: 50px !important; width: 2000px;}
+  nav:after{display: flex !important; margin-top: 50px !important; width: 100%;}
 
   p{
     text-indent: 1rem !important;
