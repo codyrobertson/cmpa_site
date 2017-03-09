@@ -190,7 +190,9 @@ a.logo--mobile{
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
+  a.logo{
+    display: none;
+  }
   img{
     width: 100%;
     height: auto;
@@ -222,7 +224,15 @@ a.logo--mobile{
   }
 
   a.logo--mobile{
-    display: none;
+    display: inline-flex;
+    font-size: 1.8rem;
+    vertical-align: middle;
+    padding: 5px;
+    flex-grow: 5;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 50px;
+    border: 4px #171717 solid;
   }
   .mobile--links{
     display: none;
@@ -236,7 +246,7 @@ a.logo--mobile{
   }
 
   a.navbar-link{
-  display: none;
+  display: none
   }
 
   .navbar-link-heading{opacity: 0; padding: 10px; color: white;}
