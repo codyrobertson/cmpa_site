@@ -243,7 +243,6 @@ a.logo--mobile{
     flex-flow: wrap;
     padding-top: 8%;
     float: left !important;
-    margin-left: -20px;
   }
 
   a.navbar-link{
