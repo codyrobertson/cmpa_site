@@ -190,6 +190,10 @@ a.logo--mobile{
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+
+    html{
+      zoom: 1;
+    }
   a.logo{
     display: none;
   }
@@ -207,7 +211,7 @@ a.logo--mobile{
     font-size: 2rem !important;
   }
 
-  nav:after{display: flex !important; margin-top: 50px !important; width: 100%;}
+  nav:after{display: flex !important; margin-top: 50px !important; width: 130%;}
 
   p{
     text-indent: 1rem !important;
