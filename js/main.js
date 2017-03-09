@@ -1,10 +1,13 @@
+if (screen.max-width < 480) {
+
+    console.log('<script type="text/javascript" src="mobile.js"></script>');
+ }
+
 //featured Styles //
 
 var $featured = $(".featured");
 var article = $("article .article");
-if (article).hasClass($featured){
-  article.addClass(".featured")
-});
+
 
 
   $("div").addClass(".flex-container");

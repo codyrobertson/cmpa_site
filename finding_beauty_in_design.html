@@ -12,46 +12,40 @@
  <link rel="stylesheet" href="styles/skeleton.css">
  <link rel="stylesheet" href="styles/normalize.css">
  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
-
- <!--Javascript -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="/js/main.js"></script>
-
-</script>
   </head>
   <body>
     <header>
     <nav class="navbar-default container u-max-full-width" id="navbar">
       <div class="row">
-        <div class="five columns">
+        <div class="five columns flex-item">
           <a class="logo navbar-brand flex-item" href="index.html" id="home"> Gerund Magazine</a>
           <a class="logo--mobile one columns flex-item"> GM </a>
         </div>
-
+        <div class="mobile--links">
         <div class="columns two container">
-          <span class="navbar-link-heading flex-item"> Article One </span><br><br>
-          <a class="navbar-link flex-item" href="finding_beauty_in_design.html"> Finding The <br><br> Beauty In Design </a>
+          <span class="navbar-link-heading flex-item"> Article One </span><br>
+          <a class="navbar-link flex-item" data-mobile-title="Article One" href=#"articleone"> Finding The <br> Beauty In Design </a>
         </div>
 
         <div class="columns two container">
-          <span class="navbar-link-heading"> Article Two </span><br><br>
-          <a class="navbar-link flex-item" href=#"articleone"> The Looks you are given / born with </a>
+          <span href="hello" class="navbar-link-heading"> Article Two </span><br>
+          <a class="navbar-link flex-item" data-mobile-title="Article Two" href=#"articleone"> The Looks you are given / born with </a>
         </div>
 
         <div class="columns two container">
-          <span class="navbar-link-heading  flex-item"> Article Three </span><br><br>
-          <a class="navbar-link  flex-item" href=#"articleone"> Raging Against Design </a>
+          <span class="navbar-link-heading  flex-item"> Article Three </span><br>
+          <a class="navbar-link  flex-item" data-mobile-title="Article Three" href=#"articleone"> Raging Against Design </a>
         </div>
 
         <div class="column one container">
-          <a class="navbar-link text flex-item" href=#"contactus"> About</a>
+          <a class="navbar-link text flex-item mb-visible" href=#"about"> About</a>
+        </div>
         </div>
       </div>
+
     </nav>
   </header>
+
     <div class="row">
   <article class="typesettings indented content hero">
     <img src="http://placehold.it/1600x450" alt="">
@@ -61,7 +55,7 @@
     <h2 class="content-author"> Jon Goldberg | 2/12/19 </h2>
     </section>
 
-    <section>
+    <section id="content">
     <header></header>
     <p class="content-body">
 Where, in the month of February, can a New Yorker turn in search of beauty? To the window, maybe, but at her own peril; what the skies giveth, in the form of a delicate Monday-afternoon coating of snow on sidewalks and branches, they taketh away by apoplectic, skyscraper-shaking rainstorm on Tuesday morning. Safer to bet instead on synthetic splendors, like the ones parading down Fashion Week runways and onto our screens, or on display in the city’s museums, which in the late winter serve a parallel purpose to the one Central Park does in more optimistic weather, doubling as collective urban living rooms when it’s too dismal to contemplate a trip outside.
@@ -76,7 +70,8 @@ Few museums fulfill that function better than the Cooper Hewitt, located in Andr
 But in the design universe, where the usefulness of an object takes priority over the elation of the spirit, beauty has a somewhat more ambiguous value. A utensil whose four stainless-steel tines protrude from the end of a delicate, triply pronged gold-plated handle like a gleaming hand extended from a sun-kissed sleeve may propose to elevate the enjoyment of a meal by its sheer gorgeousness, but a plastic fork will also spear food and get it into the mouth. The famous adage <i>“form ever follows function,”</i> coined by the American architect <cite>Louis Sullivan </cite> and emulated by modern institutions of design from the Bauhaus to Ikea, has set the priorities of design since the end of the nineteenth century. An object has a job to do. If it looks good doing it—so good, for instance, that an Italian coffee-pot design born from Fascist initiatives to promote aluminum is still sold around the world today, and can double as a lovely urn for the son of its inventor—so much the better. Seen that way, the curators of the Cooper Hewitt show are making a bold statement by throwing their lot in with beauty, calling for a readjustment of design priorities at the risk of cozying up too close to frivolity.
 <br><br></p>
 <p class="content-body">
-Then again, plastic forks can be beautiful too, to say nothing of so many now-canonical Bauhaus creations, and much of what is sold at Ikea. Function may be the foundation of good design, but to act as if beauty is a lesser, ignoble consideration for designers of useful objects is to deny the artistry and imagination inherent to the work they do. It’s also to pretend to be indifferent to beauty’s enormous power, and to our own need for it, especially when it comes to the objects we interact with and rely on the most. In 1948, Max Bill, a Swiss, Bauhaus-trained architect, artist, theorist, and designer of a fantastic array of industrial and graphic items, from clocks to typefaces, lectured the Swiss Werkbund on the topic of “Beauty generated by function and as function.” Postwar industrial designers needed to recognize that the objects they would create would constitute “ <blockquote class="typesettings"> “Beauty generated by function and as function.”</blockquote></p> <p class="content-body"> a large part of our visual culture,” Bill said. In a world of stuff, beauty itself performs a vital, uplifting function—enough of a function to be posited as an equal part of the design equation, as the title of a collection of Bill’s essays translated into English does: “Form, Function, Beauty = Gestalt.” As predicted, we’re living in an age in which a focus on function, amplified by rapidly evolving technologies, has led to useful, gorgeous design that is more widely and affordably accessible to more people than ever before. Seen that way, the Cooper Hewitt curators are simply pointing out the realigned priorities that already govern our ever-expanding world of things.
+Then again, plastic forks can be beautiful too, to say nothing of so many now-canonical Bauhaus creations, and much of what is sold at Ikea. Function may be the foundation of good design, but to act as if beauty is a lesser, ignoble consideration for designers of useful objects is to deny the artistry and imagination inherent to the work they do. It’s also to pretend to be indifferent to beauty’s enormous power, and to our own need for it, especially when it comes to the objects we interact with and rely on the most. In 1948, Max Bill, a Swiss, Bauhaus-trained architect, artist, theorist, and designer of a fantastic array of industrial and graphic items, from clocks to typefaces, lectured the Swiss Werkbund on the topic of “Beauty generated by function and as function.” Postwar industrial designers needed to recognize that the objects they would create would constitute “ <blockquote class="typesettings"> “Beauty generated by function and as function.”
+</blockquote></p> <p class="content-body"> a large part of our visual culture,” Bill said. In a world of stuff, beauty itself performs a vital, uplifting function—enough of a function to be posited as an equal part of the design equation, as the title of a collection of Bill’s essays translated into English does: “Form, Function, Beauty = Gestalt.” As predicted, we’re living in an age in which a focus on function, amplified by rapidly evolving technologies, has led to useful, gorgeous design that is more widely and affordably accessible to more people than ever before. Seen that way, the Cooper Hewitt curators are simply pointing out the realigned priorities that already govern our ever-expanding world of things.
 <br><br></p>
 <p class="content-body">
 Still, there is something provocative about their choice of beauty as a theme, not because we think that it doesn’t matter to contemporary design, but because we know just how much it does. Beauty, in design, is a consumer imperative, used to sell stuff: new rose-gold iPhones, new crystal-and-pearl-encrusted headphones. This is the Age of Ive, when industrial designers have an aura of rock star tinged with oracle, holding the rest of us in thrall as we wait for news of whatever elegant object will be next to emerge from the sleek, beautifully proportioned box.
@@ -111,4 +106,7 @@ Showing the world afresh is what the best art does; making it that way is the wo
  </div>
 </div> </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script type="text/javascript" src="main.js"></script>
 </html>

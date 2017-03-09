@@ -1,39 +1,70 @@
 
 @font-face {
   font-family: 'HelveticaNeue-Light';
-  src: url('fonts/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),  url('fonts/HelveticaNeue-Light.otf')  format('opentype'),
-	     url('fonts/HelveticaNeue-Light.woff') format('woff'), url('fonts/HelveticaNeue-Light.ttf')  format('truetype'), url('fonts/HelveticaNeue-Light.svg#HelveticaNeue-Light') format('svg');
+  src: url('../fonts/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue-Light.otf')  format('opentype'),
+	     url('../fonts/HelveticaNeue-Light.woff') format('woff'), url('../fonts/HelveticaNeue-Light.ttf')  format('truetype'), url('../fonts/HelveticaNeue-Light.svg#HelveticaNeue-Light') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HelveticaNeue-Bold';
-  src: url('fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/HelveticaNeue-Bold.otf')  format('opentype'),
-	     url('fonts/HelveticaNeue-Bold.woff') format('woff'), url('fonts/HelveticaNeue-Bold.ttf')  format('truetype'), url('fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+  src: url('../fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue-Bold.otf')  format('opentype'),
+	     url('../fonts/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue-Bold.ttf')  format('truetype'), url('../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url('fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),  url('fonts/HelveticaNeue.woff') format('woff'), url('fonts/HelveticaNeue.ttf')  format('truetype'), url('fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+  src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf')  format('truetype'), url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FuturaPT-Bold';
-  src: url('fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/FuturaPT-Bold.woff') format('woff'), url('fonts/FuturaPT-Bold.ttf')  format('truetype'), url('fonts/FuturaPT-Bold.svg#FuturaPT-Bold') format('svg');
+  src: url('../fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/FuturaPT-Bold.woff') format('woff'), url('../fonts/FuturaPT-Bold.ttf')  format('truetype'), url('../fonts/FuturaPT-Bold.svg#FuturaPT-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Bookmania';
+  src: url('../fonts/bookmania-regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/bookmania-regular.woff') format('woff'), url('../fonts/bookmania-regular.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bookmania-Italic';
+  src: url('../fonts/bookmania-regular-italic.eot?#iefix') format('embedded-opentype'),  url('../fonts/bookmania-regular-italic.woff') format('woff'), url('../fonts/bookmania-regular-italic.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bookmania-Bold';
+  src: url('../fonts/bookmania-bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/bookmania-bold.woff') format('woff'), url('../fonts/bookmania-bold.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bookmania-Bold-Italic';
+  src: url('../fonts/bookmania-bold-italic.eot?#iefix') format('embedded-opentype'),  url('../fonts/bookmania-bold-italic.woff') format('woff'), url('../fonts/bookmania-bold-italic.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
 
 
 body{
   width: 100vw;
   overflow-x: hidden;
   font-size: 62.5%;
+  text-rendering: geometricPrecision;
 }
 
 .flex-container, .container {
@@ -122,7 +153,7 @@ nav{
 
 
 nav:after{
-  background: black;
+  background: #171717;
   height: 10px;
   width: 110vw;
   margin-top: 20px;
@@ -155,9 +186,37 @@ a.logo--mobile{
   display: none;
 }
 
-@media (max-width: 400px) {
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
   a.logo{
     display: none;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  aside{
+    width: 40% !important;
+    display: inline-block;}
+
+    blockquote.typesettings, blockquote  {
+    text-align: left !important;
+    margin: inherit;
+    font-size: 2rem !important;
+  }
+
+  nav:after{display: flex !important; margin-top: 50px !important; width: 2000px;}
+
+  p{
+    text-indent: 1rem !important;
+    text-align-last: left !important;
+    line-height: 1.5 !important;
+    margin: .9rem 0 0 0 !important;
+    word-break: keep-all !important;
+    word-wrap: break-word;
+
   }
 
   a.logo::after{
@@ -165,26 +224,50 @@ a.logo--mobile{
   }
 
   a.logo--mobile{
-    display: inline-block;
+    display: inline-flex;
     font-size: 1.8rem;
     vertical-align: middle;
     padding: 5px;
+    flex-grow: 5;
+    justify-content: space-around;
     margin-top: 10px;
-    width: auto;
-    border: 4px black solid;
+    width: 50px;
+    border: 4px #171717 solid;
+  }
+  .mobile--links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-basis: 100%;
+    flex-flow: wrap;
+    padding-top: 8%;
+    float: left !important;
+    margin-left: -20px;
   }
 
-  .navbar-link{
-    display: flex;
-    vertical-align: middle;
-    font-size: 1.2rem !important;
+  a.navbar-link{
     float: left !important;
-    margin-top: -10px;
-    order: 1;}
+    position: absolute;
+    left: -5%;
+    flex-grow: 6 !important;
+    order: 1 2 3;
+    height: 100%;
+    line-height: 1.6rem !important;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 5%;
+    vertical-align: middle;
+    display: inline-flex !important;
+  }
+
+  .navbar-link-heading{opacity: 0; padding: 10px; color: white;}
+
+  .mobile--links:nth-child(1n+2){margin-top: 5px; margin-bottom: 5px;}
 
 
-  .navbar-link-heading{display: none;}
-}
+} /* NOTE: End of Responsive */
 
 a.logo::after{
   content: "Present, Progressive, Design";
@@ -219,6 +302,14 @@ a.logo::after{
   font-weight: bold;
   position: relative; }
 
+  mark{
+    background: #f6ff0d !important;
+    word-wrap: break-word;
+    white-space: pre-line;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
 ul, li, a{ text-decoration: none !important;}
 
 
@@ -230,7 +321,7 @@ h1.heading-large{
 font-family: "HelveticaNeue-Bold",sans-serif;
 font-size: 3.5rem;
 font-weight: bolder;
-color: black; }
+color: #171717; }
 
 /* NOTE: Controls Article Wrapper */
 .articles-wrapper{
@@ -248,7 +339,7 @@ flex-wrap: nowrap;
   flex-basis: auto;
   height: 100%;
   background: white;
-  border: 4px black solid;
+  border: 4px #171717 solid;
   margin: 2%;
   padding: 20px;}
 
@@ -260,7 +351,7 @@ flex-wrap: nowrap;
     margin-top: 0;
     position: relative;
     background: white;
-    border: 4px black solid;}
+    border: 4px #171717 solid;}
 
     .article-text-only h2{
       font-size: 2.8rem;
@@ -274,7 +365,7 @@ flex-wrap: nowrap;
       break-inside: auto;
       widows: inherit;
       word-break:
-      color: black !important;
+      color: #171717 !important;
       text-overflow: ellipsis;
     }
 
@@ -290,7 +381,7 @@ flex-wrap: nowrap;
 
 /* NOTE: Article Text Styles //Home Page// */
   h1, h2, h3, h4, p, span,a[class*="article-"]{
-    color: black;
+    color: #171717;
     font-size: inherit;
     font-weight: inherit;
     text-transform: capitalize;
@@ -306,23 +397,37 @@ flex-wrap: nowrap;
         margin-left: 5%;
       }
 
+      article[class*="hero"]>img{
+        display: flex;
+        width: 90%;
+        margin-left: 2em;
+        image-resolution: from-image;
+        height: 30% !important;
+
+      }
+
+      figure > img{
+        margin-bottom: -50px;
+        margin-top: 20px !important;
+      }
 
 /* NOTE: Controls Article Sub Styles */
 .article-heading{
-  color: black;}
+  color: #171717;}
 
 .article-heading--byline{
   font-size: 1.6rem;
+  font-family: "HelveticaNeue-Light";
   font-weight: normal;
   position: relative;}
 
 .article-heading--desc{
   font-size: 1.6rem;
   font-weight: normal;
-  font-family: "FuturaPT-Bold", Helvetica, sans-serif;}
+  font-family: "Bookmania-Bold", Georgia, serif;}
 
   a.article-link{color: inherit; font-size: inherit;}
-  .article-link{ font-family: "FuturaPT-Bold", Helvetica, sans-serif;}
+  a.article-link{ font-family: "FuturaPT-Bold", Helvetica, sans-serif;}
   a.article-link:after{
     content: "View Article";
     font-family: inherit;
@@ -334,10 +439,11 @@ flex-wrap: nowrap;
 p.article-heading--desc.featured, p.article-heading--desc.article-heading--byline{color: #0d29ff !important;}
 
 
-
 .article img .contained{
 margin-left: 10px;
 position: relative;} img{ max-width: 100%; height: auto;}
+
+
 
 
     .featured{
@@ -349,11 +455,11 @@ position: relative;} img{ max-width: 100%; height: auto;}
     .featured > h2, p{
       color: #0d29ff;}
 
-      p:not(.featured){color: black !important;}
+      p:not(.featured){color: #171717 !important;}
 
 .subtitle{
-  font-family: "FuturaPT-Bold", Helvetica, sans-serif;
-  color: gray;
+  font-family: "Bookmania-Bold", Georgia, serif;
+  color: #9E9E9E;
   font-size: 1.6rem;
   margin-top: -2%;}
 
@@ -385,40 +491,100 @@ position: relative;} img{ max-width: 100%; height: auto;}
     color: #555555;
   }
 
+  aside{
+    font-family: "Bookmania", serif;
+    text-transform: none !important;
+    font-size: 1.2rem !important;
+    width: 10% !important;
+    float: right !important;
+    padding-right: 2%;
+    opacity: 0.8;
+    display: block !important;
+    height: 150px !important;
+    overflow-y: hidden !important;
+    break-after: always;
+  }
+
+  aside > a::after{
+    content: "View Link";
+    font-family: "Bookmania", serif;
+    text-overflow: ellipsis !important;
+
+    word-wrap: break-word;
+    display: inline-block !important;
+    text-transform: none !important;
+    font-size: 1.2rem !important;
+    color: #0d29ff;
+  }
+
+    aside::before{
+    vertical-align: middle;
+    content: "Want to Learn More?";
+    padding-left: 3px; }
+
+cite{ opacity: 0.9;
+font-style: normal; font-family: "Bookmania-Italic";}
+
+  cite::after{
+  content: "*";
+  vertical-align: super;
+  font-size: 70%;
+  counter-increment: section;
+  padding-left: 3px;
+  }
+
   .content .content-body, p{
     line-height: 1.5;
-    font-family: Georgia, serif;
+    font-family: "Bookmania", serif;
     text-transform: none !important;
     font-size: 1.6rem !important;}
 
-    blockquote{
+    blockquote.typesettings{
       font-size: 2rem;
+      font-family: "Bookmania-Bold", Georgia, serif !important;
+      text-align: center;
     }
 
     .content-intro{
-      margin-bottom: -100px !important;
-    }
+      margin-bottom: -100px !important; text-align: left; color: #171717;}
 
     .typesettings h1.content-title{
-    color: black !important;
+    color: #171717 !important;
     font-family: "HelveticaNeue-Bold" !important;
     margin-bottom: -2.0rem !important;}
 
+      [data-overline]{
+      width: 70% !important;
+      height: 4px !important;
+      background: #171717 !important;
+      float: left !important;
+    }
+
      h2.content-author{
-      color: gray !important;
+      color: #9E9E9E !important;
       opacity: 1 !important;
       padding-top: 2rem;
+      letter-spacing: 3px !important;
       font-size: 1.8rem !important;
-      font-family: "PT-Mono", monospace !important;}
+      font-weight: normal !important;
+      font-style: normal;
+      font-family: "HelveticaNeue-Light", Helvetica, sans-serif !important;}
+
+      h3.content-cat{
+        font-size: 1.8rem !important;
+        font-weight: 600 !important;
+        color: #171717 !important;
+        padding-bottom: -50px;
+      }
 
       article > section{
         margin-bottom: -10px !important;}
 
-        blockquote{ font-family: "FuturaPT-Bold" !important;}
         blockquote > p {
           font-size: 1.9rem; }
 
           a.text-center{text-align: center !important;}
+
 
 .typesettings {
   *zoom: 1; }
@@ -430,10 +596,11 @@ position: relative;} img{ max-width: 100%; height: auto;}
 
 .typesettings {
   position: relative;
-  padding: 2em 11% 3em 11%;
-  color: black;
+  padding: 2rem 11% 3rem 11%;
+  color: #171717;
   line-height: 1.5;
-  font-family: Georgia, serif; }
+  font-size: 1.6rem;
+  font-family: "Bookmania", serif; }
   @media only screen and (max-width: 480px) {
     .typesettings {
       font-size: 1.6rem; } }
@@ -478,7 +645,7 @@ position: relative;} img{ max-width: 100%; height: auto;}
     line-height: 1.25; }
   @media only screen and (max-width: 480px) {
     .typesettings h1 {
-      font-size: 1.7rem; } }
+      text-align: left !important;} }
   @media only screen and (min-width: 481px) and (max-width: 1440px) {
     .typesettings h1 {
       letter-spacing: -1px;
@@ -499,7 +666,7 @@ position: relative;} img{ max-width: 100%; height: auto;}
       filter: alpha(opacity=40); }
       @media only screen and (max-width: 480px) {
         .typesettings h1:first-child + h2 {
-          font-size: .7em; } }
+          font-size: .7rem;  text-align: left !important;} }
       @media only screen and (min-width: 481px) and (max-width: 1440px) {
         .typesettings h1:first-child + h2 {
           font-size: .8em; } }
@@ -541,17 +708,17 @@ position: relative;} img{ max-width: 100%; height: auto;}
   @media only screen and (min-width: 481px) and (max-width: 1440px) {
     .typesettings h5 {
       margin-top: 1em;
-      font-size: .9em; } }
+      font-size: .9rem; } }
   @media only screen and (min-width: 1441px) {
     .typesettings h5 {
-      font-size: 1.1em; } }
+      font-size: 1.1rem; } }
   .typesettings h6 {
     text-transform: uppercase;
     letter-spacing: 1px; }
     @media only screen and (max-width: 480px) {
       .typesettings h6 {
-        margin-top: 1.3em;
-        font-size: .7em; } }
+        margin-top: 1.3rem;
+        font-size: .7rem; } }
     @media only screen and (min-width: 481px) and (max-width: 1440px) {
       .typesettings h6 {
         margin-top: 1.15em;
@@ -559,17 +726,17 @@ position: relative;} img{ max-width: 100%; height: auto;}
     @media only screen and (min-width: 1441px) {
       .typesettings h6 {
         margin-top: 1em;
-        font-size: .9em; } }
+        font-size: .9rem; } }
   .typesettings header:first-child + p {
-    font-size: 1.15em; }
+    font-size: 1.15rem; }
     .typesettings header:first-child + p:first-letter {
       float: left;
       margin-right: .15em;
       padding: 0 .2em;
       line-height: 1.1;
       text-transform: uppercase;
-      font-size: 3.6em;
-      border: 4px double #eeeeee; }
+      font-size: 3.6rem;
+      border: 4px double #9E9E9Eee; }
 @-moz-document url-prefix() {
   .typesettings header:first-child + p:first-letter {
     padding: .2em; } }
@@ -584,7 +751,7 @@ position: relative;} img{ max-width: 100%; height: auto;}
   .typesettings blockquote,
   .typesettings pre,
   .typesettings hr {
-    margin: .9em 0 0 0; }
+    margin: .9rem 0 0 0; }
   .typesettings ul,
   .typesettings ol {
     padding: 0; }
@@ -596,23 +763,21 @@ position: relative;} img{ max-width: 100%; height: auto;}
     .typesettings figure figcaption {
       margin-top: .2em;
       color: #aeaeae;
-      font-size: .6em; }
+      font-size: .6rem; }
   .typesettings blockquote {
     padding: 1em 0;
     color: #222222;
     text-align: center;
-    font-weight: bold;
-    border-top: 4px double #eeeeee;
-    border-bottom: 4px double #eeeeee; }
+     }
     @media only screen and (max-width: 480px) {
       .typesettings blockquote > p {
-        font-size: 1.2em; } }
+        font-size: 1.2rem; } }
     @media only screen and (min-width: 481px) and (max-width: 1440px) {
       .typesettings blockquote > p {
-        font-size: 1.3em; } }
+        font-size: 1.3rem; } }
     @media only screen and (min-width: 1441px) {
       .typesettings blockquote > p {
-        font-size: 1.5em; } }
+        font-size: 1.5rem; } }
     .typesettings blockquote > p:before, .typesettings blockquote > p:after {
       color: #aeaeae;
       font-weight: bold; }
@@ -623,7 +788,7 @@ position: relative;} img{ max-width: 100%; height: auto;}
   .typesettings code {
     padding: .1em .5em;
     font-size: .9em;
-    background-color: #eeeeee; }
+    background-color: #9E9E9Eee; }
   .typesettings pre {
     border-left: 5px solid #d4d4d4; }
     .typesettings pre code {
@@ -670,9 +835,9 @@ position: relative;} img{ max-width: 100%; height: auto;}
       border-color: #3b3b3b; }
     .typesettings section:first-of-type code {
       color: #aeaeae;
-      background-color: black; }
+      background-color: #171717; }
     .typesettings section:first-of-type pre {
-      border-color: black; }
+      border-color: #171717; }
       .typesettings section:first-of-type pre code {
         background-color: rgba(0, 0, 0, 0.2); }
     @media (min-width: 950px) {
@@ -696,20 +861,21 @@ position: relative;} img{ max-width: 100%; height: auto;}
   .typesettings section + hr {
     margin: 2em 0 0 0; }
   .typesettings aside {
-    margin-left: 1em;
-    padding: .5em;
-    border: 1px solid #eeeeee; }
+    margin-left: 1rem;
+    padding: .5rem;
+    border: 1px solid #9E9E9Eee; }
     @media only screen and (max-width: 768px) {
       .typesettings aside {
-        margin-right: 1em; } }
+        margin-right: 1rem; } }
     @media only screen and (min-width: 769px) {
       .typesettings aside {
         position: relative;
-        top: .3em;
+        top: .3rem;
+        font-family: "Bookmania";
         float: right;
-        width: 10em; } }
+        width: 10rem; } }
     .typesettings aside > * {
-      font-size: .7em; }
+      font-size: .7rem; }
   .typesettings :first-child {
     margin-top: 0; }
   .typesettings.sans-serif {
@@ -738,32 +904,32 @@ position: relative;} img{ max-width: 100%; height: auto;}
         font-size: 1.8em; } }
     @media only screen and (min-width: 481px) and (max-width: 1440px) {
       .typesettings.sans-serif h1 {
-        font-size: 2.2em; } }
+        font-size: 2.2rem; } }
     @media only screen and (min-width: 1441px) {
       .typesettings.sans-serif h1 {
-        font-size: 2.4em; } }
+        font-size: 2.4rem; } }
     .typesettings.sans-serif h1:first-child + h2 {
-      letter-spacing: .25em;
+      letter-spacing: .25rem;
       font-family: 'Verdana', sans-serif; }
       @media only screen and (max-width: 480px) {
         .typesettings.sans-serif h1:first-child + h2 {
-          font-size: .5em; } }
+          font-size: .5rem; } }
       @media only screen and (min-width: 481px) and (max-width: 1440px) {
         .typesettings.sans-serif h1:first-child + h2 {
-          font-size: .65em; } }
+          font-size: .65rem; } }
       @media only screen and (min-width: 1441px) {
         .typesettings.sans-serif h1:first-child + h2 {
-          font-size: .7em; } }
+          font-size: .7rem; } }
     @media only screen and (max-width: 480px) {
       .typesettings.sans-serif h2 {
-        font-size: 1.3em; } }
+        font-size: 1.3rem; } }
     @media only screen and (min-width: 481px) and (max-width: 1440px) {
       .typesettings.sans-serif h2 {
-        font-size: 1.5em; } }
+        font-size: 1.5rem; } }
     @media only screen and (min-width: 1441px) {
       .typesettings.sans-serif h2 {
         letter-spacing: -1px;
-        font-size: 1.7em; } }
+        font-size: 1.7rem; } }
     @media only screen and (max-width: 480px) {
       .typesettings.sans-serif h3 {
         font-size: 1em; } }
@@ -820,7 +986,7 @@ position: relative;} img{ max-width: 100%; height: auto;}
   .typesettings.indented pre + p,
   .typesettings.indented ul + p,
   .typesettings.indented ol + p {
-    text-indent: 2em; }
+    text-indent: 2rem; }
   .typesettings.indented p + p {
     margin-top: 0; }
   @media only screen and (min-width: 769px) {
@@ -829,36 +995,3 @@ position: relative;} img{ max-width: 100%; height: auto;}
       margin-top: 0; } }
   .typesettings.indented blockquote * {
     text-align: inherit; }
-
-    .readRemainingGauge {
-    	position: fixed;
-    	font-weight: bold;
-    	font-size: 13px;
-    	border-radius: 3px;
-    	left: 40px;
-    	bottom: 40px;
-    	width: 95px;
-    	height: 38px;
-      z-index: 10;
-    	line-height: 38px;
-    	text-align: center;
-    	font-family: "Open Sans", sans-serif;
-    	font-size: 14px;
-    	font-weight: normal;
-    	background: black;
-    	color: black;
-
-    	opacity: 1;
-    	-webkit-transition: opacity 0.45s ease;
-    	-moz-transition:    opacity 0.45s ease;
-    	-o-transition:      opacity 0.45s ease;
-    	transition:         opacity 0.45s ease;
-
-    }
-    .readRemainingGauge.hidden {
-    	opacity: 0;
-    	-moz-transition-property: none;
-    	-webkit-transition-property: none;
-    	-o-transition-property: none;
-    	transition-property: none;
-    }

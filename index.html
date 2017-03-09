@@ -14,42 +14,38 @@
  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
 
  <!--Javascript -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="/js/main.js"></script>
 
-</script>
   </head>
   <body>
     <header>
     <nav class="navbar-default container u-max-full-width" id="navbar">
       <div class="row">
-        <div class="five columns">
+        <div class="five columns flex-item">
           <a class="logo navbar-brand flex-item" href="index.html" id="home"> Gerund Magazine</a>
           <a class="logo--mobile one columns flex-item"> GM </a>
         </div>
-
+        <div class="mobile--links">
         <div class="columns two container">
           <span class="navbar-link-heading flex-item"> Article One </span><br>
-          <a class="navbar-link flex-item" href=#"articleone"> Finding The <br> Beauty In Design </a>
+          <a class="navbar-link flex-item" data-mobile-title="Article One" href=#"articleone"> Finding The <br> Beauty In Design </a>
         </div>
 
         <div class="columns two container">
-          <span class="navbar-link-heading"> Article Two </span><br>
-          <a class="navbar-link flex-item" href=#"articleone"> The Looks you are given / born with </a>
+          <span href="hello" class="navbar-link-heading"> Article Two </span><br>
+          <a class="navbar-link flex-item" data-mobile-title="Article Two" href=#"articleone"> The Looks you are given / born with </a>
         </div>
 
         <div class="columns two container">
           <span class="navbar-link-heading  flex-item"> Article Three </span><br>
-          <a class="navbar-link  flex-item" href=#"articleone"> Raging Against Design </a>
+          <a class="navbar-link  flex-item" data-mobile-title="Article Three" href=#"articleone"> Raging Against Design </a>
         </div>
 
         <div class="column one container">
-          <a class="navbar-link text flex-item" href=#"contactus"> About</a>
+          <a class="navbar-link text flex-item mb-visible" href=#"about"> About</a>
+        </div>
         </div>
       </div>
+
     </nav>
   </header>
 
@@ -74,7 +70,7 @@
     </article>
 
     <article class="flex-item article">
-      <p class="flex-item article-heading--byline text-center">SPONSERED ARTICLE </p>
+      <p class="flex-item article-heading--byline text-center"> <mark> SPONSERED ARTICLE </mark> </p>
       <img src="img/zora-45.jpg" class= " flex-item article-img contained">
       <p class="flex-item article-heading--byline"> Rob Walker // 8-9-16 </p>
       <h2 class="flex-item article-heading">The Looks you are given and the looks you are born with </h2>
@@ -97,4 +93,7 @@ The cover of the 1976 self-titled début album by the band Boston depicted sever
  </div>
 </div> </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script type="text/javascript" src="main.js"></script>
 </html>
