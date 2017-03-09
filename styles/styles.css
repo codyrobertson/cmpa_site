@@ -62,7 +62,7 @@
 
 body{
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-size: 62.5%;
   text-rendering: geometricPrecision;
 }
@@ -543,6 +543,15 @@ font-style: normal; font-family: "Bookmania-Italic";}
       font-size: 2rem;
       font-family: "Bookmania-Bold", Georgia, serif !important;
       text-align: center;
+    }
+
+      img.img-inline{
+      float: right;
+      padding: 0;
+      padding-left: 10px;
+      margin: 0;
+      width: 400px !important;
+      overflow-x: visible !important;
     }
 
     .content-intro{
