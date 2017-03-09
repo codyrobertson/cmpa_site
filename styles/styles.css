@@ -250,6 +250,7 @@ a.logo--mobile{
     position: absolute;
     flex-grow: 6 !important;
     order: 1 2 3;
+    left: -2%;
     height: 100%;
     line-height: 1.6rem !important;
     padding-top: 10px;
