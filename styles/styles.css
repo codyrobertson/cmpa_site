@@ -221,7 +221,7 @@ a.logo--mobile{
     word-break: keep-all !important;
     word-wrap: break-word;}
 
-    .content-body{
+    p.content-body, .content{
         font-size: 2rem !important;
     }
 
