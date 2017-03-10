@@ -234,7 +234,7 @@ a.logo--mobile{
     }
 
     .content-intro{
-      margin-top: -100px;
+      margin-top: -100px !important;
     }
 
 .flex-item:nth-child(2) {
