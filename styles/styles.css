@@ -217,7 +217,6 @@ a.logo--mobile{
     text-indent: 1rem !important;
     text-align-last: left !important;
     line-height: 2 !important;
-    margin: .9rem 0 0 0 !important;
     word-break: keep-all !important;
     word-wrap: break-word;}
 
@@ -235,6 +234,7 @@ a.logo--mobile{
 
     section.content-intro{
       margin-bottom: -100px !important;
+      padding-bottom: -100px !important;
     }
 
 .flex-item:nth-child(2) {
