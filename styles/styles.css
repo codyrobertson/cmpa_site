@@ -890,7 +890,7 @@ font-style: normal; font-family: "Bookmania-Italic";}
   .typesettings section + section,
   .typesettings hr + section,
   .typesettings section + hr {
-    margin: 2em 0 0 0; }
+    margin: -4em 0 0 0; }
   .typesettings aside {
     margin-left: 1rem;
     padding: .5rem;
