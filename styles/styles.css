@@ -513,6 +513,96 @@ position: relative;} img{ max-width: 100%; height: auto;}
     color: #555555;
   }
 
+
+hr, hr.content-rule{margin-top: 5rem !important; margin-bottom: 2rem !important;}
+h4.content-kicker-title{
+  font-family: "FuturaPT-Bold", Helvetica, sans-serif !important;
+  font-size: 3.5rem !important;
+  text-indent: 0px !important;
+  margin-top: -30px !important;
+}
+
+h4.content-kicker-title::before{
+  content: "Thanks For Reading,";
+}
+
+h4.content-kicker-title + p::before{
+  content: "Thanks for reading our article, if you love reading articles from Gerund like this one. ";
+  font-family: inherit;
+  padding-bottom: 20px !important;
+  padding-right: 100%;
+}
+
+h4.content-kicker-title + p::after{
+  content: "Think about subscribing to our monthly magazine.";
+  display: inline;
+  font-family: inherit;
+  padding-bottom: 20px !important;
+}
+
+
+p.content-kicker-copy + a.text-center{
+  margin-top: 2rem !important;
+  padding-top: 10px !important;
+  text-align: left;
+}
+
+  form{
+  width: 400px;
+  padding: 10px;
+  height: auto;
+  position: absolute;
+  bottom: -30%;
+  left: 1%;
+  display: inline;
+}
+#kicker-cta::before{
+  content: "Subscribe To Gerund Today";
+  display: flex;
+  font-family: "FuturaPT-Bold", Helvetica;
+  position: absolute;
+  bottom: 50px;
+  left: -7.5%;
+}
+
+input[type*="submit"]{
+    font-family: "FuturaPT-Bold", Helvetica !important;
+    margin-left: 10px;
+    font-size: 1.2rem !important;
+    text-transform: none !important;
+    color: white !important;
+    transition: background-color ease-in-out 350ms;
+    border: none !important;
+    background-color: #0d29ff !important;
+}
+
+input[type*="submit"]:hover, input[type*="submit"]:active, input[type*="submit"]:focus{
+  background-color: #6476FF !important;
+}
+ #kicker-cta{
+  margin-top: 100px;
+  position: absolute;
+display: flex;
+}
+
+.content-kicker-copy + a.text-center::after{
+  background-image: url"(img/magazine.gif");
+  content: "";
+  image-resolution: from-image;
+margin-left: 0;
+display: inline-block;
+  float: left !important;
+  height: 300px !important;
+}
+
+  div > img.kicker-img{
+  image-resolution: from-image;
+margin-left: -25%;
+margin-top: -5%;
+display: inline-block;
+
+  height: 300px !important;
+}
     section + section{
       margin-bottom: -100px;
     }
@@ -521,32 +611,69 @@ position: relative;} img{ max-width: 100%; height: auto;}
     font-family: "Bookmania", serif;
     text-transform: none !important;
     font-size: 1.2rem !important;
-    width: 10% !important;
+    width: 10% !important;;
+    vertical-align: top !important;
     float: right !important;
-    padding-right: 2%;
+    padding: 1% 1% 1% 1% !important;
     opacity: 0.8;
+    margin: auto;
     display: block !important;
     height: 150px !important;
     overflow-y: hidden !important;
     break-after: always;
   }
 
-  aside > a::after{
-    content: "View Link";
+  aside a::before{
+    content: "Follow Up";
     font-family: "Bookmania", serif;
-    text-overflow: ellipsis !important;
-
+    margin-top: 5px;
     word-wrap: break-word;
+    position: relative;
     display: inline-block !important;
     text-transform: none !important;
     font-size: 1.2rem !important;
-    color: #0d29ff;
   }
 
-    aside::before{
-    vertical-align: middle;
-    content: "Want to Learn More?";
-    padding-left: 3px; }
+  aside img{
+    width: 80px;
+    text-align: center;
+    margin-top: -30px;
+
+  }
+blockquote.text-left{
+  text-align: left !important;
+  width: 50%;
+
+}
+
+blockquote.text-right{
+  text-align: right !important;
+  width: 50%;
+
+}
+
+h4.quote-added{
+  font-size: 2rem !important;
+  font-family: "HelveticaNeue-Light";
+  color: #171717 !important;
+  padding-bottom: 10px;
+  margin: 0.9rem, 0, 0,0 !important;
+}
+
+blockquote.text-left, blockquote.text-right{
+  text-align: center;
+}
+
+blockquote.text-left:before{
+  content: "—";
+  display: inline;
+}
+blockquote.text-right:after{
+  content: "—";
+  display: inline;
+}
+
+
 
 cite{ opacity: 0.9;
 font-style: normal; font-family: "Bookmania-Italic";}
@@ -564,6 +691,10 @@ font-style: normal; font-family: "Bookmania-Italic";}
     font-family: "Bookmania", serif;
     text-transform: none !important;
     font-size: 1.6rem !important;}
+
+      p.content-body.em::first-line{
+      font-weight: bold;
+    }
 
     blockquote.typesettings{
       font-size: 2rem;
@@ -766,12 +897,12 @@ font-style: normal; font-family: "Bookmania-Italic";}
     font-size: 1.15rem; }
     .typesettings header:first-child + p:first-letter {
       float: left;
-      margin-right: .15em;
+      margin-right: .15em !important;
       padding: 0 .2em;
-      line-height: 1.1;
+      line-height: 1.1 !important;
       text-transform: uppercase;
-      font-size: 3.6rem;
-      border: 4px double #9E9E9Eee; }
+      font-size: 3.6rem !important;
+      border: 4px double #9E9E9E; }
 @-moz-document url-prefix() {
   .typesettings header:first-child + p:first-letter {
     padding: .2em; } }
@@ -823,7 +954,7 @@ font-style: normal; font-family: "Bookmania-Italic";}
   .typesettings code {
     padding: .1em .5em;
     font-size: .9em;
-    background-color: #9E9E9Eee; }
+    background-color: #9E9E9E; }
   .typesettings pre {
     border-left: 5px solid #d4d4d4; }
     .typesettings pre code {
@@ -898,7 +1029,7 @@ font-style: normal; font-family: "Bookmania-Italic";}
   .typesettings aside {
     margin-left: 1rem;
     padding: .5rem;
-    border: 1px solid #9E9E9Eee; }
+    border: 1px solid #9E9E9E; }
     @media only screen and (max-width: 768px) {
       .typesettings aside {
         margin-right: 1rem; } }
