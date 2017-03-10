@@ -215,12 +215,15 @@ a.logo--mobile{
 
   p{
     text-indent: 1rem !important;
-    font-size: 1.8rem !important;
     text-align-last: left !important;
     line-height: 1.5 !important;
     margin: .9rem 0 0 0 !important;
     word-break: keep-all !important;
     word-wrap: break-word;}
+
+    .content-body{
+        font-size: 2rem !important;
+    }
 
     body {
         overflow-x: hidden !important;
