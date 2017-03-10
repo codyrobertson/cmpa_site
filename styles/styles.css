@@ -513,6 +513,10 @@ position: relative;} img{ max-width: 100%; height: auto;}
     color: #555555;
   }
 
+    section + section{
+      margin-bottom: -100px;
+    }
+
   aside{
     font-family: "Bookmania", serif;
     text-transform: none !important;
