@@ -581,7 +581,7 @@ font-style: normal; font-family: "Bookmania-Italic";}
     }
 
     section.content-intro{
-      padding-bottom: -200px; text-align: left; color: #171717;}
+      margin-bottom: -200px; text-align: left; color: #171717;}
 
     .typesettings h1.content-title{
     color: #171717 !important;
