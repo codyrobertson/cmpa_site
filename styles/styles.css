@@ -177,6 +177,10 @@ nav:after{
   position: relative;;
 }
 
+ a.logo, a.logo--mobile::after{
+   content: "GM";
+ }
+
  a:hover:not(.logo){
   color: #0d29ff !important;
   transition: color ease 350ms;
@@ -245,7 +249,12 @@ a.logo--mobile{
   a.logo::after{
     display: none;
   }
-
+.navbar-link .text{
+  float: left !important;
+    overflow: hidden !important;
+  line-height: 1.6rem !important;
+  vertical-align: middle;
+}
   a.logo--mobile{
     display: inline-flex;
     font-size: 1.8rem;
@@ -263,18 +272,21 @@ a.logo--mobile{
     justify-content: space-around;
     align-items: flex-start;
     flex-basis: 100%;
+
     flex-flow: wrap;
     padding-top: 8%;
     float: left !important;
   }
 
-  a.navbar-link{
+  a.navbar-link, .mb-visible, .text{
     float: left !important;
+      overflow: hidden !important;
+
     position: absolute;
     flex-grow: 6 !important;
     order: 1 2 3;
     left: -2%;
-    height: 100%;
+
     line-height: 1.6rem !important;
     padding-top: 10px;
     padding-left: 10px;
