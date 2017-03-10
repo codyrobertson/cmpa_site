@@ -233,8 +233,8 @@ a.logo--mobile{
         overflow-x: hidden !important;
     }
 
-    .content-intro{
-      margin-top: -100px !important;
+    section.content-intro{
+      margin-bottom: -100px !important;
     }
 
 .flex-item:nth-child(2) {
