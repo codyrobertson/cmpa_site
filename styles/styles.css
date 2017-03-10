@@ -811,7 +811,10 @@ font-style: normal; font-family: "Bookmania-Italic";}
      }
     @media only screen and (max-width: 480px) {
       .typesettings blockquote > p {
-        font-size: 1.2rem; } }
+        font-size: 1.2rem; }
+      .typesettings p {
+        font-size: 2rem;
+        }}
     @media only screen and (min-width: 481px) and (max-width: 1440px) {
       .typesettings blockquote > p {
         font-size: 1.3rem; } }
