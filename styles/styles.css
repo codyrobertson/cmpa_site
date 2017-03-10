@@ -213,7 +213,7 @@ a.logo--mobile{
 
   nav:after{display: flex !important; margin-top: 50px !important; width: 130%;}
 
-  
+
 
     body {
         overflow-x: hidden !important;
@@ -577,7 +577,7 @@ font-style: normal; font-family: "Bookmania-Italic";}
     }
 
     .content-intro{
-      margin-bottom: -100px !important; text-align: left; color: #171717;}
+      text-align: left; color: #171717;}
 
     .typesettings h1.content-title{
     color: #171717 !important;
