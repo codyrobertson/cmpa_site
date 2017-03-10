@@ -222,7 +222,7 @@ a.logo--mobile{
     word-wrap: break-word;}
 
     p.content-body{
-        font-size: 20px !important;
+        margin: 1rem;
     }
 
     body {
@@ -235,6 +235,7 @@ a.logo--mobile{
 
     section.content-intro{
       margin-bottom: -100px !important;
+      padding-top:
     }
 
 .flex-item:nth-child(2) {
@@ -811,10 +812,7 @@ font-style: normal; font-family: "Bookmania-Italic";}
      }
     @media only screen and (max-width: 480px) {
       .typesettings blockquote > p {
-        font-size: 1.2rem; }
-      .typesettings p {
-        font-size: 2rem;
-        }}
+        font-size: 1.2rem; } }
     @media only screen and (min-width: 481px) and (max-width: 1440px) {
       .typesettings blockquote > p {
         font-size: 1.3rem; } }
