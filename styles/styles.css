@@ -221,7 +221,14 @@ a.logo--mobile{
     word-break: keep-all !important;
     word-wrap: break-word;}
 
-
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
 .flex-item:nth-child(2) {
     -webkit-order: 2;
     -ms-flex-order: 2;
