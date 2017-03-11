@@ -735,17 +735,17 @@ font-style: normal; font-family: "Bookmania-Italic";}
 		clear: both;}
 		.about-title{
 			color: #171717;
-			font-family: "HelveticaNeue-Bold" ;}
+			font-family: "HelveticaNeue-Bold";}
 
-				.about-title[is="large"]{
-					font-size: 7rem;}
+				h1.about-title[is="large"]{
+					font-size: 7rem !important;}
 
 					h1.about-title[is="less-large"]{font-size: 4rem; font-family: "FuturaPT-Bold";}
-						.about-title[is="less-large"] ~ p{
+						h1.about-title[is="less-large"] ~ p{
 							margin-top: -0.9rem !important;
 							font-size: 1.6rem !important;
 						}
-					.about-title ~ p{
+					h1.about-title ~ p{
 						margin-top: -2rem;
 						font-size: 2rem !important;
 						font-family: "Helvetica-Neue-Light";}
