@@ -48,17 +48,40 @@
   </header>
     <div class="row">
   <article class="typesettings indented content hero">
-     <figure> <img class="text-center" src="img/zora-15.jpg" alt="" data-caption="taken by: Cody Robertson">
+     <figure> <img class="text-center" src="img/zora-15.jpg" alt="The Looks you are given and the looks you are born with " data-caption="taken by: Cody Robertson">
       <figcaption id="credits"> </figure>
 
-    <section class="content-intro">
-      <svg width="100%" height="4px" data-overline=""></svg>
-    <h3 class="content-cat"> // Design </h3>
-    <h1 class="content-title">The Looks you are given and the looks you are born with  </h1>
-    <h2 class="content-author"> Amanda Filipacchi | December 12, 2014
- </h2>
+    <!-- NOTE: Starting Article Intro -->
+    <section class="article-intro">
+      <!-- NOTE: Starting Article Title block -->
+      <div class="title-block">
+      <svg class="title-block_svg"></svg>
+      <!---Content content-cat --->
+    <h3 class="article-cat"> Design </h3>
+    <!---ENd---------->
+    <h1 class="article-title">The Looks you are given and the looks you are born with </h1>
+  </div>
+
+    <!-- NOTE: author-block -->
+    <div class="author-block">
+    <h2 class="content-author">
+      <!--Avatar -->
+       <img class="round" width="30" height="30" avatar="Amanda Filipacchi">
+       <!---Name -->
+      <span class="author"> Amanda Filipacchi </span>
+      <!---Date -->
+      <time> December 12, 2014 </time>
+    </h2>
+  </div>
+  <!---END author-block --------->
+  <!-- NOTE: Article Start Quote -->
     </section>
-<h4 class="content-cat"> "I was born cross-eyed—not all the time, but some of the time. My right eye drifted inward, especially when I was tired or daydreaming."</h4>
+    <!---END INTRO----------------------->
+    <div class="article-pre-quote">
+    <h4> "I was born cross-eyed—not all the time, but some of the time. My right eye drifted inward, especially when I was tired or daydreaming."</h4>
+  </div>
+    <!-- NOTE: Starting Article -->
+
     <section>
     <header></header>
     <p class="content-body">
@@ -126,13 +149,26 @@ Several years later, I noticed a disturbing pattern: many of the things I wrote 
   For many people, even intelligent and brilliant ones, why does beauty count for more than anything else in their appreciation of other human beings—particularly of women? Why don’t other qualities count for more? And yet, am I not one of the culprits? For every scene expressing my disapproval of someone’s love of beauty, I wrote another scene in which I took great pleasure in imagining and describing that beauty. I revelled in my love of human beauty while frowning upon that love every step of the way.
 </p>
 
+div id="disqus_thread"></div>
+<script>
 
-  <!--
-    <h4 class="content-kicker-title"></h4>
-     <p class="content-kicker-copy"></p>
-      <a class="text-center" href="celebrating_design.html"> Read Our Next Article </a>
-    -->
-
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://gerund.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 
 
@@ -150,6 +186,7 @@ Several years later, I noticed a disturbing pattern: many of the things I wrote 
     <small> Colophon: All Images Were Taken By Cody Robertson </small>
  </div>
 </div> </footer>
+<script id="dsq-count-scr" src="//gerund.disqus.com/count.js" async></script>
 </body>
 <!--Javascript -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

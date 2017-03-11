@@ -12,9 +12,6 @@
  <link rel="stylesheet" href="styles/skeleton.css">
  <link rel="stylesheet" href="styles/normalize.css">
  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
-
- <!--Javascript -->
-
   </head>
   <body>
     <header>
@@ -22,7 +19,7 @@
       <div class="row">
         <div class="five columns flex-item">
           <a class="logo navbar-brand flex-item" href="index.html" id="home"> Gerund Magazine</a>
-          <a href="index.html" class="logo--mobile one columns flex-item"></a>
+          <a class="logo--mobile one columns flex-item"> GM </a>
         </div>
         <div class="mobile--links">
         <div class="columns two container">
@@ -41,50 +38,82 @@
         </div>
 
         <div class="column one container">
-          <a class="navbar-link text flex-item " href="about.html"> About</a>
+          <a class="navbar-link text flex-item mb-visible" href="about.html"> About</a>
         </div>
         </div>
 
       </div>
     </nav>
   </header>
-
-
-    <div class="row text-center">
-    <div class="flex-item" id="articles">
+  <!-- NOTE: Starting Content Wrapper -->
+<section class="wrapper u-full-width u-max-full-width" is="home-page">
+  <!--- Page Intro Text --->
+    <div class="container">
+    <div class="row">
+    <div class="six columns" id="articles">
       <h1 class="heading-large"> Featured Articles </h1>
       <p class="subtitle"> Our Featured Articles This Month </p>
     </div>
     </div>
+  </div>
+  <!--- END///Page Intro Text --->
 
-  <div class="articles-wrapper">
-<div class="container">
-
-    <article class="flex-item article featured">
-      <img src="img/zora-45.jpg" class="flex-item article-img contained">
+  <!-- NOTE: Large Centered Article -->
+  <div class="container is-featured">
+    <div class="row">
+    <article class="twelve columns article featured">
+      <!--Image -->
+      <img src="img/zora-45.jpg" alt="Finding Beauty In Design Image" class="article-img contained">
       <br>
-      <p class="flex-item article-heading--byline featured"> Jon Goldberg // 8-9-16 </p>
-      <h2 class="flex-item article-heading"> Finding Beauty In Design </h2>
-      <p class="flex-item article-heading--desc featured truncate mask"> Where, in the month of February, can a New Yorker turn in search of beauty? To the window, maybe, but at her own peril; what the skies giveth, in the form of a delicate Monday-afternoon coating of snow on sidewalks and branches, they taketh away by apoplectic, skyscraper-shaking rainstorm on Tuesday morning. Safer to bet instead on synthetic splendors, like the ones parading down Fashion Week runways and onto our screens, or on display in the city’s museums, which in the late winter serve a parallel purpose to the one Central Park does in more optimistic weather, doubling as collective urban living rooms when it’s too dismal to contemplate a trip outside..</p>
-      <a class="flex item article-link" href="finding_beauty_in_design.html"></a>
-    </article>
-
-    <article class="flex-item article">
-      <img src="img/zora-20.jpg" class= " flex-item article-img contained">
-      <p class="flex-item article-heading--byline"> Laura Green // 1-9-16 </p>
-      <h2 class="flex-item article-heading">The Looks you are given and the looks you are born with </h2>
-      <a class="article-link" href="looks_given.html"></a>
-    </article>
-    <article class=" flex-item article article-text-only">
-      <p class="flex-item article-heading--byline"> Rob Walker // 8-9-16 </p>
-      <h2 class="flex-item article-heading"> Celebrating Design Without Contending It</h2>
-      <p class="flex-item article-heading--desc truncate">
-The cover of the 1976 self-titled début album by the band Boston depicted several guitar-shaped spaceships, evidently <br> escaping an exploding Earth. The album was a smash, and the visual is now iconic... </p>
-<a class="article-link" href="celebrating_design.html"></a>
-
+      <!--Author -->
+      <p class="article-heading--byline featured"> <img class="round" width="30" height="30" avatar="Jon Goldberg">  Jon Goldberg <time>August 8, 2014</time> </p>
+      <!--Title -->
+      <h2 class="article-heading"> Finding Beauty In Design </h2>
+      <!--Desctiption and Truncate/fade block -->
+      <p class="article-heading--desc featured truncate fade"> Where, in the month of February, can a New Yorker turn in search of beauty? To the window, maybe, but at her own peril; what the skies giveth, in the form of a delicate Monday-afternoon coating of snow on sidewalks and branches, they taketh away by apoplectic, skyscraper-shaking rainstorm on Tuesday morning. Safer to bet instead on synthetic splendors, like the ones parading down Fashion Week runways and onto our screens, or on display in the city’s museums, which in the late winter serve a parallel purpose to the one Central Park does in more optimistic weather, doubling as collective urban living rooms when it’s too dismal to contemplate a trip outside..</p>
+      <!--Link To Next Article -->
+      <a class="article-link" href="finding_beauty_in_design.html"></a>
     </article>
   </div>
 </div>
+<!-- NOTE: END ARTICLE 1 -->
+
+<!-- NOTE: Start of The Other Articles Wrapper -->
+<div class="container">
+  <div class="row">
+    <div class="twelve columns u-full-width u-max-full-width" is="home-page_articles-2">
+
+    <!--Article 2 Start -->
+    <article class="six columns article u-pull-left u-full-width">
+      <!--Image-->
+      <img src="img/zora-20.jpg" class= "article-img contained">
+      <!---Author -->
+      <br>
+      <p class="article-heading--byline">  <img class="round" width="30" height="30" avatar="Amanda Filipacchi"> Amanda Filipacchi  <time>December 12, 2014</time> </p>
+      <h2 class=" article-heading">The Looks you are given and the looks you are born with </h2>
+      <a class="article-link" href="looks_given.html"></a>
+    </article>
+    <!--Article 2 End------->
+
+    <!-- NOTE: Article Three Start -->
+    <article class=" five columns article u-pull-right u-full-width">
+      <!-- Author  -->
+
+      <p class=" article-heading--byline"> <img class="round" width="30" height="30" avatar="Rob Walker">  Rob Walker <time> March 12, 2014 </time> </p>
+      <!--Title -->
+      <h2 class=" article-heading"> Celebrating Design Without Contending It</h2>
+      <!--Desctiption and Truncate/fade block -->
+      <p class=" article-heading--desc truncate fade longer">
+The cover of the 1976 self-titled début album by the band Boston depicted several guitar-shaped spaceships, evidently <br> escaping an exploding Earth. The album was a smash, and the visual is now iconic... </p>
+      <!-- Link -->
+  <a class="article-link" href="celebrating_design.html"></a>
+    </article>
+    <!--- ENd of Artile  THree --->
+  </div>
+</div>
+</div>
+<!--End Of Other Articles Wrapper -->
+</section>
 <footer>
 <div class="container text-center">
   <div class="row">
@@ -96,4 +125,5 @@ The cover of the 1976 self-titled début album by the band Boston depicted sever
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script type="text/javascript" src="main.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </html>

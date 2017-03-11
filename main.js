@@ -1,66 +1,92 @@
-$.extend({
-    replaceTag: function (currentElem, newTagObj, keepProps) {
-        var $currentElem = $(currentElem);
-        var i, $newTag = $(newTagObj).clone();
-        if (keepProps) {//{{{
-            newTag = $newTag[0];
-            newTag.className = currentElem.className;
-            $.extend(newTag.classList, currentElem.classList);
-            $.extend(newTag.attributes, currentElem.attributes);
-        }//}}}
-        $currentElem.wrapAll($newTag);
-        $currentElem.contents().unwrap();
-        // return node; (Error spotted by Frank van Luijn)
-        return this; // Suggested by ColeLawrence
-    }
-});
 
-$.fn.extend({
-    replaceTag: function (newTagObj, keepProps) {
-        // "return" suggested by ColeLawrence
-        return this.each(function() {
-            jQuery.replaceTag(this, newTagObj, keepProps);
-        });
-    }
+    (function(w, d){
 
 
+        function LetterAvatar (name, size) {
 
-//featured Styles //
+            name  = name || '';
+            size  = size || 60;
 
-var $featured = $(".featured");
-var article = $("article .article");
-  article.addClass(".featured");
+            var colours = [
+                    "#00000", "#9E9E9E", "#0d29ff",
+                ],
 
-
-
-$('p').readRemaining();
-$('article').readRemaining({
-  showGaugeDelay   : 1000,           // Delay before showing the indicator.
-  showGaugeOnStart : true,          // Show the gauge initially, even before the user scroll.
-  timeFormat       : '%mm %ss left', // Will replace %m and %s with minutes and seconds.
-  maxTimeToShow    : 20*60,          // Only show time if is lower than x minutes (multiplied to seconds).
-  minTimeToShow    : 10,             // Only show time if is higher than x seconds (If it's less than 10 seconds... just read).
-  gaugeContainer   : 'section',             // The element where the gauge will append. If left '', the container will be the same scrolling element.
-  insertPosition   : 'append',       // 'append' or 'prepend' as required by style
-  gaugeWrapper     : '#content',             // Optional, the element that define the visible scope for the gauge. If left "", the gauge will be visible all along.
-  topOffset        : 0,              // Distance between the top of the gaugeWrapper and the point where the gauge will start to appear. Some designs require this.
-  bottomOffset     : 0               // Distance between bottom border where the box will appear and the bottom of the element.
-});
+                nameSplit = String(name).toUpperCase().split(' '),
+                initials, charIndex, colourIndex, canvas, context, dataURI;
 
 
-$(window).width( >= 400)({
-('span.navbar-link-heading').replaceTag('<a class=navbar-link-heading href=index.html>', false);
-)};
-document.onload = function() {
-// Execute function on load through self-invocation
-var switchAlt = function() {
-    // Get all images on the document
-    var images = document.getElementsByTagName('img');
+            if (nameSplit.length == 1) {
+                initials = nameSplit[0] ? nameSplit[0].charAt(0):'?';
+            } else {
+                initials = nameSplit[0].charAt(0) + nameSplit[1].charAt(0);
+            }
 
-    // Count the number of image elements and switch alt and src
-    var i = images.length;
-    while (i--) {
-        images[i].src = images[i].alt;
-    }
-}();
-};
+            if (w.devicePixelRatio) {
+                size = (size * w.devicePixelRatio);
+            }
+
+            charIndex     = (initials == '?' ? 72 : initials.charCodeAt(0)) - 64;
+            colourIndex   = charIndex % 20;
+            canvas        = d.createElement('canvas');
+            canvas.width  = size;
+            canvas.height = size;
+            context       = canvas.getContext("2d");
+
+            context.fillStyle = colours[colourIndex - 1];
+            context.fillRect (0, 0, canvas.width, canvas.height);
+            context.font = Math.round(canvas.width/2)+"px HelveticaNeue-Bold";
+            context.textAlign = "center";
+            context.fillStyle = "#FFF";
+            context.fillText(initials, size / 2, size / 1.5);
+
+            dataURI = canvas.toDataURL();
+            canvas  = null;
+
+            return dataURI;
+        }
+
+        LetterAvatar.transform = function() {
+
+            Array.prototype.forEach.call(d.querySelectorAll('img[avatar]'), function(img, name) {
+                name = img.getAttribute('avatar');
+                img.src = LetterAvatar(name, img.getAttribute('width'));
+                img.removeAttribute('avatar');
+                img.setAttribute('alt', name);
+            });
+        };
+
+
+        // AMD support
+        if (typeof define === 'function' && define.amd) {
+
+            define(function () { return LetterAvatar; });
+
+        // CommonJS and Node.js module support.
+        } else if (typeof exports !== 'undefined') {
+
+            // Support Node.js specific `module.exports` (which can be a function)
+            if (typeof module != 'undefined' && module.exports) {
+                exports = module.exports = LetterAvatar;
+            }
+
+            // But always support CommonJS module 1.1.1 spec (`exports` cannot be a function)
+            exports.LetterAvatar = LetterAvatar;
+
+        } else {
+
+            window.LetterAvatar = LetterAvatar;
+
+            d.addEventListener('DOMContentLoaded', function(event) {
+                LetterAvatar.transform();
+            });
+        }
+
+    })(window, document);
+
+
+    var scrollEventHandler = function()
+{
+  window.scroll(0, window.pageYOffset)
+}
+
+window.addEventListener("scroll", scrollEventHandler, false);
