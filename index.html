@@ -1,20 +1,22 @@
 <!doctype html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Gerund | Magazine </title>
-    <meta charset="UTF-8">
- <meta name="description" content="Gerund Magazine is the leading deszign mag ">
- <meta name="keywords" content="Gerund,CSS,XML,JavaScript">
- <meta name="author" content="Cody Robertson">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="styles/styles.css">
- <link rel="stylesheet" href="styles/skeleton.css">
- <link rel="stylesheet" href="styles/normalize.css">
- <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Gerund | Magazine </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Gerund Magazine is the leading deszign mag ">
+  <meta name="keywords" content="Gerund,CSS,XML,JavaScript">
+  <meta name="author" content="Cody Robertson">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/skeleton.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+</head>
+
+<body>
+  <header>
     <nav class="navbar-default container u-max-full-width" id="navbar">
       <div class="row">
         <div class="five columns flex-item">
@@ -22,108 +24,104 @@
           <a class="logo--mobile one columns flex-item"> GM </a>
         </div>
         <div class="mobile--links">
-        <div class="columns two container">
-          <span class="navbar-link-heading flex-item"> Article One </span><br>
-          <a class="navbar-link flex-item" data-mobile-title="Article One" href="finding_beauty_in_design.html"> Finding The <br> Beauty In Design </a>
+          <div class="columns two container">
+            <span class="navbar-link-heading flex-item"> Article One </span><br>
+            <a class="navbar-link flex-item" data-mobile-title="Article One" href="finding_beauty_in_design.html"> Finding The <br> Beauty In Design </a>
+          </div>
+          <div class="columns two container">
+            <span href="hello" class="navbar-link-heading"> Article Two </span><br>
+            <a class="navbar-link flex-item" href="looks_given.html"> The Looks you are given / born with </a>
+          </div>
+          <div class="columns two container">
+            <span class="navbar-link-heading flex-item"> Article Three </span><br>
+            <a class="navbar-link  flex-item" href="celebrating_design.html">Celebrating Design </a>
+          </div>
+          <div class="column one container">
+            <a class="navbar-link text flex-item mb-visible" href="about.html"> About</a>
+          </div>
         </div>
-
-        <div class="columns two container">
-          <span href="hello" class="navbar-link-heading"> Article Two </span><br>
-          <a class="navbar-link flex-item" href="looks_given.html"> The Looks you are given / born with </a>
-        </div>
-
-        <div class="columns two container">
-          <span class="navbar-link-heading flex-item"> Article Three </span><br>
-          <a class="navbar-link  flex-item"  href="celebrating_design.html">Celebrating Design </a>
-        </div>
-
-        <div class="column one container">
-          <a class="navbar-link text flex-item mb-visible" href="about.html"> About</a>
-        </div>
-        </div>
-
       </div>
     </nav>
   </header>
   <!-- NOTE: Starting Content Wrapper -->
-<section class="wrapper u-full-width u-max-full-width" is="home-page">
-  <!--- Page Intro Text --->
+  <section class="wrapper u-full-width u-max-full-width" is="home-page">
+    <!--- Page Intro Text --->
     <div class="container">
-    <div class="row">
-    <div class="six columns" id="articles">
-      <h1 class="heading-large"> Featured Articles </h1>
-      <p class="subtitle"> Our Featured Articles This Month </p>
+      <div class="row">
+        <div class="six columns" id="articles">
+          <h1 class="heading-large"> Featured Articles </h1>
+          <p class="subtitle"> Our Featured Articles This Month </p>
+        </div>
+      </div>
     </div>
+    <!--- END///Page Intro Text --->
+    <!-- NOTE: Large Centered Article -->
+    <div class="container is-featured">
+      <div class="row">
+        <article class="twelve columns article featured">
+          <!--Image -->
+          <img src="img/zora-45.jpg" alt="Finding Beauty In Design Image" class="article-img contained">
+          <br>
+          <!--Author -->
+          <p class="article-heading--byline featured"> <img class="round" width="30" height="30" avatar="Jon Goldberg"> Jon Goldberg <time>August 8, 2014</time> </p>
+          <!--Title -->
+          <h2 class="article-heading"> Finding Beauty In Design </h2>
+          <!--Desctiption and Truncate/fade block -->
+          <p class="article-heading--desc featured truncate fade"> Where, in the month of February, can a New Yorker turn in search of beauty? To the window, maybe, but at her own peril; what the skies giveth, in the form of a delicate Monday-afternoon coating of snow on sidewalks and branches, they taketh
+            away by apoplectic, skyscraper-shaking rainstorm on Tuesday morning. Safer to bet instead on synthetic splendors, like the ones parading down Fashion Week runways and onto our screens, or on display in the city’s museums, which in the late
+            winter serve a parallel purpose to the one Central Park does in more optimistic weather, doubling as collective urban living rooms when it’s too dismal to contemplate a trip outside..</p>
+          <!--Link To Next Article -->
+          <a class="article-link" href="finding_beauty_in_design.html"></a>
+        </article>
+      </div>
     </div>
-  </div>
-  <!--- END///Page Intro Text --->
-
-  <!-- NOTE: Large Centered Article -->
-  <div class="container is-featured">
-    <div class="row">
-    <article class="twelve columns article featured">
-      <!--Image -->
-      <img src="img/zora-45.jpg" alt="Finding Beauty In Design Image" class="article-img contained">
-      <br>
-      <!--Author -->
-      <p class="article-heading--byline featured"> <img class="round" width="30" height="30" avatar="Jon Goldberg">  Jon Goldberg <time>August 8, 2014</time> </p>
-      <!--Title -->
-      <h2 class="article-heading"> Finding Beauty In Design </h2>
-      <!--Desctiption and Truncate/fade block -->
-      <p class="article-heading--desc featured truncate fade"> Where, in the month of February, can a New Yorker turn in search of beauty? To the window, maybe, but at her own peril; what the skies giveth, in the form of a delicate Monday-afternoon coating of snow on sidewalks and branches, they taketh away by apoplectic, skyscraper-shaking rainstorm on Tuesday morning. Safer to bet instead on synthetic splendors, like the ones parading down Fashion Week runways and onto our screens, or on display in the city’s museums, which in the late winter serve a parallel purpose to the one Central Park does in more optimistic weather, doubling as collective urban living rooms when it’s too dismal to contemplate a trip outside..</p>
-      <!--Link To Next Article -->
-      <a class="article-link" href="finding_beauty_in_design.html"></a>
-    </article>
-  </div>
-</div>
-<!-- NOTE: END ARTICLE 1 -->
-
-<!-- NOTE: Start of The Other Articles Wrapper -->
-<div class="container">
-  <div class="row">
-    <div class="twelve columns u-full-width u-max-full-width" is="home-page_articles-2">
-
-    <!--Article 2 Start -->
-    <article class="six columns article u-pull-left u-full-width">
-      <!--Image-->
-      <img src="img/zora-20.jpg" class= "article-img contained">
-      <!---Author -->
-      <br>
-      <p class="article-heading--byline">  <img class="round" width="30" height="30" avatar="Amanda Filipacchi"> Amanda Filipacchi  <time>December 12, 2014</time> </p>
-      <h2 class=" article-heading">The Looks you are given and the looks you are born with </h2>
-      <a class="article-link" href="looks_given.html"></a>
-    </article>
-    <!--Article 2 End------->
-
-    <!-- NOTE: Article Three Start -->
-    <article class=" five columns article u-pull-right u-full-width">
-      <!-- Author  -->
-
-      <p class=" article-heading--byline"> <img class="round" width="30" height="30" avatar="Rob Walker">  Rob Walker <time> March 12, 2014 </time> </p>
-      <!--Title -->
-      <h2 class=" article-heading"> Celebrating Design Without Contending It</h2>
-      <!--Desctiption and Truncate/fade block -->
-      <p class=" article-heading--desc truncate fade longer">
-The cover of the 1976 self-titled début album by the band Boston depicted several guitar-shaped spaceships, evidently <br> escaping an exploding Earth. The album was a smash, and the visual is now iconic... </p>
-      <!-- Link -->
-  <a class="article-link" href="celebrating_design.html"></a>
-    </article>
-    <!--- ENd of Artile  THree --->
-  </div>
-</div>
-</div>
-<!--End Of Other Articles Wrapper -->
-</section>
-<footer>
-<div class="container text-center">
-  <div class="row">
-   <h1>  Copyright (c) 2016 Gerund Media Holdings LLC, All Rights Reserved. </h1>
-    <small> Colophon: All Images Were Taken By Cody Robertson </small>
- </div>
-</div> </footer>
+    <!-- NOTE: END ARTICLE 1 -->
+    <!-- NOTE: Start of The Other Articles Wrapper -->
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns u-full-width u-max-full-width" is="home-page_articles-2">
+          <!--Article 2 Start -->
+          <article class="six columns article u-pull-left u-full-width">
+            <!--Image-->
+            <img src="img/zora-20.jpg" class="article-img contained">
+            <!---Author -->
+            <br>
+            <p class="article-heading--byline"> <img class="round" width="30" height="30" avatar="Amanda Filipacchi"> Amanda Filipacchi <time>December 12, 2014</time> </p>
+            <h2 class=" article-heading">The Looks you are given and the looks you are born with </h2>
+            <a class="article-link" href="looks_given.html"></a>
+          </article>
+          <!--Article 2 End------->
+          <!-- NOTE: Article Three Start -->
+          <article class=" five columns article u-pull-right u-full-width">
+            <!-- Author  -->
+            <p class=" article-heading--byline"> <img class="round" width="30" height="30" avatar="Rob Walker"> Rob Walker <time> March 12, 2014 </time> </p>
+            <!--Title -->
+            <h2 class=" article-heading"> Celebrating Design Without Contending It</h2>
+            <!--Desctiption and Truncate/fade block -->
+            <p class=" article-heading--desc truncate fade longer">
+              The cover of the 1976 self-titled début album by the band Boston depicted several guitar-shaped spaceships, evidently <br> escaping an exploding Earth. The album was a smash, and the visual is now iconic...
+            </p>
+            <!-- Link -->
+            <a class="article-link" href="celebrating_design.html"></a>
+          </article>
+          <!--- ENd of Artile  THree --->
+        </div>
+      </div>
+    </div>
+    <!--End Of Other Articles Wrapper -->
+  </section>
+  <footer>
+    <div class="container text-center">
+      <div class="row">
+        <h1>  Copyright (c) 2016 Gerund Media Holdings LLC, All Rights Reserved. </h1>
+        <small> Colophon: All Images Were Taken By Cody Robertson </small>
+      </div>
+    </div>
+  </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script type="text/javascript" src="main.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 </html>
