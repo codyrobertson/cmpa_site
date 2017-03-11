@@ -771,7 +771,9 @@ font-style: normal; font-family: "Bookmania-Italic";}
 						margin-top: -2rem;
 						font-size: 2rem !important;
 						font-family: "Helvetica-Neue-Light";}
-	div[is="first"]{margin-left: -1%;} div[is="first"] + div{display: inline-block;}
+
+	div[is="first"]{margin-left: -1%;}
+	 div[is="first"] + div{display: inline-block;}
 
 
 /* NOTE: Article Intro */
