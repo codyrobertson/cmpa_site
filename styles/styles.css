@@ -317,6 +317,11 @@ color: #171717; }
 			width: 100%;
 		}
 
+		img.round{
+			height: 30px;
+			width: 30px;
+		}
+
 		div [is="home-page_articles-2"] > article:nth-child(2){
 			width: auto;
 			height: auto;
