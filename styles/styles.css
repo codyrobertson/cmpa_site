@@ -737,11 +737,11 @@ font-style: normal; font-family: "Bookmania-Italic";}
 			color: #171717;
 			font-family: "HelveticaNeue-Bold";}
 
-				h1.about-title[is="large"]{
+				h1.about-title.large{
 					font-size: 7rem !important;}
 
-					h1.about-title[is="less-large"]{font-size: 4rem; font-family: "FuturaPT-Bold";}
-						h1.about-title[is="less-large"] ~ p{
+					h1.about-title.less-large{font-size: 4rem; font-family: "FuturaPT-Bold";}
+						h1.about-title.less-large ~ p{
 							margin-top: -0.9rem !important;
 							font-size: 1.6rem !important;
 						}
