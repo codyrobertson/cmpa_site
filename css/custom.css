@@ -1,0 +1,52 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+html{
+  font-size: 62.5%;
+}
+
+.logo{
+height: 100%;
+}
+
+.img-large{
+  height: 100px;
+  z-index: 1;
+}
+.logo-svg{
+  display: flex;
+  text-align: center;
+  margin-left: 44.3%;
+}
+@media all and (max-width: 768px) {
+  .logo-svg{
+    display: flex;
+    text-align: center;
+    margin-left: 30.3%;
+  }
+}
+.hero-large{
+  min-width: 50%;
+  font-size: 9rem;
+}
+
+.capitalize{text-transform: capitalize;}
+
+.line-shrink,
+.line-shrink--xs,
+.line-shrink--s,
+.line-grow,
+.line-grow--m,
+.line-grow--l,
+.line-grow--xl{
+  line-height: inherit;}
+    .line-shrink{line-height: calc(100% / 1.2);}
+      .line-shrink--xs{line-height: calc(100% / 1.5);}
+        .line-shrink{line-height: calc(100% / 1.8);}
+    .line-grow{line-height: calc(100% * 1.1);}
+      .line-grow--m{line-height: calc(100% * 1.2);}
+        .line-grow--l{line-height: calc(100% * 1.5);}
+          .line-grow--xl{line-height: calc(100% * 2.0);}
+
+.sans{
+font-family: 'Assistant', sans-serif;}
+
+.white{color: white !important;}
